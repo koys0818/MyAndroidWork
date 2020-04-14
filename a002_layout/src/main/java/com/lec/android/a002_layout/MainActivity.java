@@ -9,7 +9,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.linear4);
+        setContentView(R.layout.constraint3);
 
         int ss = 100;
         String tt = "호호";
