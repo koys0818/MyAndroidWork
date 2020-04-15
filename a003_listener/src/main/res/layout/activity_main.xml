@@ -127,10 +127,9 @@
                 android:id="@+id/btnClear"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_span="2"
                 android:layout_column="1"
-                android:text="Clear"
-                />
+                android:layout_span="2"
+                android:text="Clear" />
 
         </TableRow>
 
