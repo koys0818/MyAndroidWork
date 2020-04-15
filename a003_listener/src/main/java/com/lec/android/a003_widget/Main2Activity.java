@@ -185,6 +185,7 @@ public class Main2Activity extends AppCompatActivity {
 
                 }
                 et.setText(x.toString());
+                calresult.setText(x.toString());
 
             }
 
