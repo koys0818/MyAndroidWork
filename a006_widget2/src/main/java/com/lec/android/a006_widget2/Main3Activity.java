@@ -67,7 +67,7 @@ public class Main3Activity extends AppCompatActivity {
                     handler.post(new Runnable() {
                         @Override
                         public void run() {
-                            seekbar.getProgress(value);
+//                            seekbar.getProgress(value);
                         }
                     });
 
