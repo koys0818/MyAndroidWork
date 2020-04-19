@@ -14,6 +14,7 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="183dp"
+        android:background="#398DCF"
         app:cardBackgroundColor="#FFFFFFFF"
         app:cardCornerRadius="10dp"
         app:cardElevation="5dp"
@@ -21,7 +22,8 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:background="#B0D2ED">
 
             <TextView
                 android:id="@+id/tvName"
@@ -35,7 +37,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/tvPhone"
+                android:id="@+id/tvAge"
                 android:layout_width="214dp"
                 android:layout_height="24dp"
                 android:layout_marginStart="16dp"
@@ -53,10 +55,10 @@
                 android:layout_marginTop="16dp"
                 android:text="주소 :"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tvPhone" />
+                app:layout_constraintTop_toBottomOf="@+id/tvAge" />
 
             <ImageButton
-                android:id="@+id/btnDelItem"
+                android:id="@+id/btnDel"
                 android:layout_width="37dp"
                 android:layout_height="39dp"
                 android:layout_marginTop="16dp"

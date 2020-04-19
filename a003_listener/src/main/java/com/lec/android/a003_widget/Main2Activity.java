@@ -54,120 +54,190 @@ public class Main2Activity extends AppCompatActivity {
             }
         });
 
-         btn2.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Log.d("myapp", "2 클릭");
-                    a = 2;
-                    et.getText().append("2");
-                }
-            });
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d("myapp", "2 클릭");
+                a = 2;
+                et.getText().append("2");
+            }
+        });
 
-         btn3.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Log.d("myapp", "3 클릭");
-                    a = 3;
-                    et.getText().append("3");
-                }
-            });
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d("myapp", "3 클릭");
+                a = 3;
+                et.getText().append("3");
+            }
+        });
 
-         btn4.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Log.d("myapp", "4 클릭");
-                    a = 4;
-                    et.getText().append("4");
-                }
-            });
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d("myapp", "4 클릭");
+                a = 4;
+                et.getText().append("4");
+            }
+        });
 
-         btn5.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Log.d("myapp", "5 클릭");
-                    a = 5;
-                    et.getText().append("5");
-                }
-            });
+        btn5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d("myapp", "5 클릭");
+                a = 5;
+                et.getText().append("5");
+            }
+        });
 
-         btn6.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Log.d("myapp", "6 클릭");
-                    a = 6;
-                    et.getText().append("6");
-                }
-            });
+        btn6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d("myapp", "6 클릭");
+                a = 6;
+                et.getText().append("6");
+            }
+        });
 
-         btn7.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Log.d("myapp", "7 클릭");
-                    a = 7;
-                    et.getText().append("7");
-                }
-            });
+        btn7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d("myapp", "7 클릭");
+                a = 7;
+                et.getText().append("7");
+            }
+        });
 
-         btn8.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Log.d("myapp", "8 클릭");
-                    a = 8;
-                    et.getText().append("8");
-                }
-            });
+        btn8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d("myapp", "8 클릭");
+                a = 8;
+                et.getText().append("8");
+            }
+        });
 
-         btn9.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Log.d("myapp", "9 클릭");
-                    a = 9;
-                    et.getText().append("9");
-                }
-            });
+        btn9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d("myapp", "9 클릭");
+                a = 9;
+                et.getText().append("9");
+            }
+        });
 
-         btnplus.setOnClickListener(new View.OnClickListener() {
-             @Override
-             public void onClick(View v) {
-                 Log.d("myapp", "+클릭");
-                 first = et.getText().toString();
-                 i = "+";
-                 et.setText("");
-             }
-         });
+        btnplus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d("myapp", "+클릭");
+
+
+                if(i != ""){
+                    if(calresult.getText().toString() != "0"){
+                        first = calresult.getText().toString();
+                    }
+
+                    second = et.getText().toString();
+                    Integer x = 0;
+                    x = Integer.parseInt(first) + Integer.parseInt(second);
+
+
+
+                    calresult.setText(x.toString());
+                }
+                else{
+                    first = et.getText().toString();
+                }
+
+                i = "+";
+                et.setText("");
+
+            }
+        });
 
 
         btnmul.setOnClickListener(new View.OnClickListener() {
-                     @Override
-                     public void onClick(View v) {
-                         Log.d("myapp", "X클릭");
-                         first = et.getText().toString();
-                         i = "*";
-                         et.setText("");
-                     }
-                 });
+            @Override
+            public void onClick(View v) {
+                Log.d("myapp", "X클릭");
+
+                if(i != ""){
+                    if(calresult.getText().toString() != "0"){
+                        first = calresult.getText().toString();
+                    }
+
+                    second = et.getText().toString();
+                    Integer x = 0;
+                    x = Integer.parseInt(first) * Integer.parseInt(second);
+
+
+
+                    calresult.setText(x.toString());
+                }
+                else{
+                    first = et.getText().toString();
+                }
+
+                i = "*";
+                et.setText("");
+            }
+        });
 
 
         btnmin.setOnClickListener(new View.OnClickListener() {
-                     @Override
-                     public void onClick(View v) {
-                         Log.d("myapp", "-클릭");
-                         first = et.getText().toString();
-                         i = "-";
-                         et.setText("");
-                     }
-                 });
+            @Override
+            public void onClick(View v) {
+                Log.d("myapp", "-클릭");
+
+                if(i != ""){
+                    if(calresult.getText().toString() != "0"){
+                        first = calresult.getText().toString();
+                    }
+
+                    second = et.getText().toString();
+                    Integer x = 0;
+                    x = Integer.parseInt(first) - (Integer.parseInt(second));
+
+
+
+                    calresult.setText(x.toString());
+                }
+                else{
+                    first = et.getText().toString();
+                }
+
+                i = " - ";
+                et.setText("");
+            }
+        });
 
 
         btndiv.setOnClickListener(new View.OnClickListener() {
-                     @Override
-                     public void onClick(View v) {
-                         Log.d("myapp", "/클릭");
-                         first = et.getText().toString();
-                         i = "/";
-                         et.setText("");
-                     }
-                 });
+            @Override
+            public void onClick(View v) {
+                Log.d("myapp", "/클릭");
+
+                if(i != ""){
+                    if(calresult.getText().toString() != "0"){
+                        first = calresult.getText().toString();
+                    }
+
+                    second = et.getText().toString();
+                    Integer x = 0;
+                    x = Integer.parseInt(first) / Integer.parseInt(second);
+
+
+
+                    calresult.setText(x.toString());
+                }
+                else{
+                    first = et.getText().toString();
+                }
+
+                i = "/";
+                et.setText("");
+            }
+        });
 
         btnr.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -179,13 +249,14 @@ public class Main2Activity extends AppCompatActivity {
 
                 switch (i){
                     case "+": x = Integer.parseInt(first) + Integer.parseInt(second); break;
-                    case "-": x = Integer.parseInt(first) - Integer.parseInt(second); break;
+                    case " - ": x = Integer.parseInt(first) - Integer.parseInt(second); break;
                     case "*": x = Integer.parseInt(first) * Integer.parseInt(second); break;
                     case "/": x = Integer.parseInt(first) / Integer.parseInt(second); break;
 
                 }
                 et.setText(x.toString());
                 calresult.setText(x.toString());
+                i = "";
 
             }
 
@@ -197,7 +268,10 @@ public class Main2Activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 et.setText("");
-                calresult.setText("");
+                calresult.setText("0");
+                i = "";
+                first = "";
+                second = "";
             }
         });
 
