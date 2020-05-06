@@ -37,7 +37,7 @@ public class Main2Activity extends AppCompatActivity implements SensorEventListe
     @Override
     protected void onResume() {
         super.onResume();
-        //센서 값이 변경되었을때마다 콜백 받기 위한 리스너 등록    sensoreventlistener
+        //센서 값이 변경되었을때마다 콜백 받기 위한 리스너 등록f    sensoreventlistener
         sn.registerListener((SensorEventListener)this,
                 accelerometer,     //콜백 원하는 센서
                 SensorManager.SENSOR_DELAY_UI   //지연시간
